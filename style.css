@@ -1,5 +1,63 @@
+:root{
+    --title-color : rgb(241, 241, 241);
+    --header-bg : rgb(44, 44, 86);
+    --nav-color : rgb(218, 218, 218);
+    --nav-hover : rgb(103, 75, 244);
+    --btn-color : white;
+}
+
 *{
     margin : 0;
     padding : 0;
     box-sizing : border-box;
 }
+body{
+    height : 100vh;
+    width : 100%;
+}
+
+/* header */
+.header{
+    height : 10%;
+    width : 100%;
+    background-color : var(--header-bg);
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 1.4rem;
+}
+.header_title{
+    color : var(--title-color);
+    font-size : 1.7rem;
+    font-weight : 600;
+}
+.navs{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    list-style : none;
+    gap : 2rem;
+}
+.nav a{
+    color : var(--nav-color);
+    text-decoration : none;
+    font-size : 1.3rem;
+    transition : color 0.2s ease-in;
+}
+.nav a:hover{
+    color : var(--nav-hover);
+}
+
+.theme_btn{
+    color : var(--btn-color);
+    font-size : 1.7rem; 
+     transition : color 0.2s ease-in;
+     cursor : pointer;
+}
+
+.theme_btn:hover{
+    color : var(--nav-hover);
+}
+
+
+
