@@ -1,5 +1,6 @@
 :root{
     --title-color : rgb(241, 241, 241);
+     --edu_titlecolor : black;
     --header-bg : rgb(44, 44, 86);
     --nav-color : rgb(218, 218, 218);
     --nav-hover : rgb(103, 75, 244);
@@ -16,6 +17,29 @@
     --edu-cont-color : black;
     --skill-about-bg : rgb(210 215 197);
     --social-icon-color : rgb(149, 149, 149);
+    --skill-dec-color : black;
+}
+
+[data-theme="dark"]{
+     --title-color : rgb(241, 241, 241);
+     --edu_titlecolor : rgb(248, 248, 248);
+    --header-bg : rgb(0, 0, 0);
+    --nav-color : rgb(218, 218, 218);
+    --nav-hover : rgb(103, 75, 244);
+    --theme-btn-color : rgb(255, 255, 255);
+    --about-bg : rgb(36, 36, 36);
+    --hello-color : rgb(220, 220, 220);
+    --name-color : rgb(255, 255, 255);
+    --pro-color : rgb(255, 255, 255);
+    --border-color : rgb(246, 246, 246);
+    --btn-bg : rgb(39, 39, 55);
+    --btn-color : rgb(183, 183, 183);
+    --edu-cart-bg : #27292c;
+    --edu-icon : rgb(206, 206, 206);
+    --edu-cont-color : rgb(234, 233, 233);
+    --skill-about-bg : rgb(48, 51, 41);
+    --social-icon-color : rgb(149, 149, 149);
+    --skill-dec-color : rgb(246, 246, 246);
 }
 
 *{
@@ -155,6 +179,7 @@ body{
 
 .education_title{
     font-size : 2.5rem;
+    color : var(--edu_titlecolor);
 }
 
 .education_carts{
@@ -208,6 +233,7 @@ body{
 
 .skill_title{
     font-size : 2.5rem;
+    color : var(--edu_titlecolor);
 }
 
 .skills_carts{
@@ -248,6 +274,10 @@ body{
 .skill_dec{
     font-size : 1.5rem;
 }
+
+.skill_heading,.skill_dec{
+    color : var(--skill-dec-color);
+}
 .skill_image{
     height : 100%;
     width : 20%;
@@ -273,6 +303,7 @@ body{
 
 .contact_title{
     font-size : 2.5rem;
+    color : var(--edu_titlecolor);
 }
 
 .contact_image{
@@ -302,14 +333,17 @@ body{
 }
 .contact_name{
     font-size : 2rem;
+    color : var(--name-color);
 }
 
 .con_logo{
     font-size : 1.5rem;
+    color : var(--skill-dec-color);
 }
 
 .cont_s{
     font-size : 1.5rem;
+    color : var(--skill-dec-color);
 }
 .email_link{
     display : flex;
