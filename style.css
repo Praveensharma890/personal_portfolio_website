@@ -14,6 +14,7 @@
     --edu-cart-bg : #6189ff;
     --edu-icon : black;
     --edu-cont-color : black;
+    --skill-about-bg : rgb(210 215 197);
 }
 
 *{
@@ -36,6 +37,7 @@ body{
     align-items : center;
     padding : 1.4rem;
     position : fixed;
+    z-index : 10;
 }
 .header_title{
     color : var(--title-color);
@@ -79,6 +81,7 @@ body{
     justify-content : center;
     align-items : center;
     gap : 2.5rem;
+    z-index : 5;
 }
 
 .image_box{
@@ -146,6 +149,7 @@ body{
     align-items : center;
     background-color : var(--about-bg);
     gap : 2rem;
+    z-index : 5;
 }
 
 .education_title{
@@ -189,3 +193,66 @@ body{
     transform : scale(1.02);
 }
 
+.skills{
+    height : 160vh;
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    gap  : 1rem;
+    background-color : var(--about-bg);
+    z-index : 5;
+}
+
+.skill_title{
+    font-size : 2.5rem;
+}
+
+.skills_carts{
+    height : 75%;
+    width : 70%;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : space-between;
+}
+
+.skills_cart{
+    height : 18%;
+    width : 100%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    gap : 0.5rem;
+}
+
+.skill_about{
+    height : 90%;
+    width : 70%;
+    background-color : var(--skill-about-bg);
+    padding : 0.8rem;
+    border-radius : 1rem;
+    border : 1px solid var(--border-color);
+    transition : transform 0.3s ease;
+}
+
+.skill_about:hover{
+    transform : scale(1.02);
+}
+.skill_heading{
+    font-size : 2rem;
+}
+
+.skill_dec{
+    font-size : 1.5rem;
+}
+.skill_image{
+    height : 100%;
+    width : 20%;
+}
+
+.skill_img{
+    height : 100%;
+    width : 100%;
+}
