@@ -256,3 +256,70 @@ body{
     height : 100%;
     width : 100%;
 }
+
+/* contact section */
+.contact{
+    height : 100vh;
+    width : 100%;
+    background-color : var(--about-bg);
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    gap : 1rem;
+    z-index : 5;
+}
+
+.contact_title{
+    font-size : 2.5rem;
+}
+
+.contact_image{
+    height : 45%;
+    width : 22%;
+    border-radius : 1rem;
+    transition : 0.3s ease;
+}
+
+.contact_image:hover{
+    transform : scale(1.01);
+}
+
+.cont_img{
+    height : 100%;
+    width : 100%;
+    border-radius : 1rem;
+    border : 1px solid var(--border-color);
+}
+
+.contact_desc{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    gap : 0.5rem;
+}
+.contact_name{
+    font-size : 2rem;
+}
+
+.con_logo{
+    font-size : 1.5rem;
+}
+
+.cont_s{
+    font-size : 1.5rem;
+}
+.email_link{
+    display : flex;
+    justify-content : left;
+    align-items : center;
+    gap : 0.5rem;
+}
+
+.contact_number{
+   display : flex;
+    justify-content : left;
+    align-items : center;
+    gap : 0.5rem;
+}
