@@ -1,22 +1,53 @@
 // theme change
 const theme_btn = document.querySelector(".theme_btn");
-let num = 0;
 
 theme_btn.addEventListener("click",()=>{
-    if(num === 0){
-    theme_btn.classList.remove("ri-sun-line");
-    theme_btn.classList.add("ri-moon-fill");
-    document.documentElement.setAttribute("data-theme","dark");
-    num = 1;
-    }
-   else if(num === 1){
-    theme_btn.classList.add("ri-sun-line");
-    theme_btn.classList.remove("ri-moon-fill");
-    document.documentElement.setAttribute("data-theme","light");
-    num = 0;
-    }
-})
+        changeTheme();
+});
 
+function applyTheme(){
+     let curTheme;
+     if(localStorage.getItem("portfoliotheme")){
+          curTheme = localStorage.getItem("portfoliotheme");
+          if(curTheme === "light")
+          {
+               applyLightTheme();
+          }
+          else if(curTheme === "dark"){
+               applydarkTheme();
+          }
+     }
+     else{
+          localStorage.setItem("portfoliotheme","light");
+          applyTheme();
+     }
+}
+
+function changeTheme(){
+     let curTheme = localStorage.getItem("portfoliotheme");
+     if(curTheme === "light"){
+          applydarkTheme();
+     }
+     else if(curTheme === "dark"){
+          applyLightTheme();
+     }
+}
+
+function applyLightTheme(){
+       theme_btn.classList.add("ri-sun-line");
+       theme_btn.classList.remove("ri-moon-fill");
+       document.documentElement.setAttribute("data-theme","light");
+       localStorage.setItem("portfoliotheme","light");
+}
+
+function applydarkTheme(){
+     theme_btn.classList.remove("ri-sun-line");
+     theme_btn.classList.add("ri-moon-fill");
+     document.documentElement.setAttribute("data-theme","dark");
+     localStorage.setItem("portfoliotheme","dark");
+}
+
+applyTheme();
 
 //title web developer prof
 let prof = document.querySelector(".my_prof");
