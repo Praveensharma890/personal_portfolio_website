@@ -76,3 +76,24 @@ function dlt(){
         setTimeout(print,100);
      }
 }
+
+//cv button
+let cv_btn = document.querySelector(".left_btn");
+let noti_ok_btn = document.querySelector(".cv_ok_btn");
+let notification_box = document.querySelector(".cv-notification");
+
+cv_btn.addEventListener("click",()=>{
+     shownotification();
+})
+
+noti_ok_btn.addEventListener("click",()=>{
+     removenotification();
+})
+
+function shownotification(){
+     notification_box.classList.add("display_notification_bar");
+}
+
+function removenotification(){
+     notification_box.classList.remove("display_notification_bar");
+}

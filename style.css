@@ -18,6 +18,7 @@
     --skill-about-bg : rgb(210 215 197);
     --social-icon-color : rgb(149, 149, 149);
     --skill-dec-color : black;
+    --cv-ok-bg : rgb(189, 0, 0);
 }
 
 [data-theme="dark"]{
@@ -40,6 +41,7 @@
     --skill-about-bg : rgb(48, 51, 41);
     --social-icon-color : rgb(149, 149, 149);
     --skill-dec-color : rgb(246, 246, 246);
+    --cv-ok-bg : rgb(189, 0, 0);
 }
 
 *{
@@ -107,6 +109,7 @@ body{
     align-items : center;
     gap : 2.5rem;
     z-index : 5;
+    position : relative;
 }
 
 .image_box{
@@ -197,6 +200,62 @@ body{
 
 .left_btn:hover,.right_btn a:hover{
     background-color : var(--nav-hover);
+}
+
+/* cv notification */
+.cv-notification{
+    position : absolute;
+    top : 38%;
+    left : 38%;
+    height : 30%;
+    width : 30%;
+    border : 1px solid var(--border-color);
+    background-color : var(--about-bg);
+    display : none;
+}
+
+.notification_header{
+    height : 15%;
+    width : 100%;
+    background-color : var(--header-bg);
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+.notification_header h1{
+    font-size : 1.3rem;
+    font-weight : 500;
+    color : var(--title-color);
+}
+
+.notification_box{
+    height : 85%;
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    gap : 2rem;
+}
+
+.notification{
+    font-size : 1.1rem;
+    color : var(--hello-color);
+}
+
+.cv_ok_btn{
+    border : 1px solid var(--border-color);
+    padding : 0.5rem 1rem;
+    background-color : var(--cv-ok-bg);
+    border-radius : 0.5rem;
+    color : var(--title-color);
+    font-size : 1rem;
+}
+.cv_ok_btn:hover{
+    background-color : rgb(195, 45, 45);
+}
+.display_notification_bar{
+    display : block;
 }
 
 /* education section */
