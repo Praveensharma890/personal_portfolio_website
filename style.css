@@ -19,6 +19,7 @@
     --social-icon-color : rgb(149, 149, 149);
     --skill-dec-color : black;
     --cv-ok-bg : rgb(189, 0, 0);
+    --scroll-bg : rgb(249, 249, 249);
 }
 
 [data-theme="dark"]{
@@ -48,6 +49,7 @@
     margin : 0;
     padding : 0;
     box-sizing : border-box;
+    scroll-behavior : smooth;
 }
 body{
     height : 100vh;
@@ -489,4 +491,15 @@ body{
 .copyright{
     font-size : 1.1rem;
     color : var(--social-icon-color);
+}
+
+/* slide bar */
+
+::-webkit-scrollbar{
+    width : 0.3rem;
+    background-color : var(--scroll-bg);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color : var(--header-bg);
 }
