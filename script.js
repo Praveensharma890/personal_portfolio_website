@@ -97,3 +97,44 @@ function shownotification(){
 function removenotification(){
      notification_box.classList.remove("display_notification_bar");
 }
+
+
+// nav bar active status on scroll and click
+
+let sections = document.querySelectorAll("section");
+let navs = document.querySelectorAll(".navTag");
+
+window.addEventListener("scroll",()=>{
+     setActiveNav();
+})
+
+navs.forEach((nav)=>{
+     nav.addEventListener("click",()=>{
+          setActiveNav();
+     })
+})
+
+function setActiveNav(){
+     let scrollY = window.scrollY + 100;
+     let current = "";
+
+     sections.forEach((section)=>{
+        let start = section.offsetTop;
+        let height = section.offsetHeight;
+        let id = section.getAttribute("id");
+        if(scrollY >= start && scrollY < start + height){
+           current = id;
+           
+           navs.forEach((nav)=>{
+              let navId = nav.getAttribute("href");
+              nav.classList.remove("active");
+              if(navId === "#" + current){
+               nav.classList.add("active");
+              }
+           })
+
+        }
+     })
+}
+
+setActiveNav();
