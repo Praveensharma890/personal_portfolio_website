@@ -111,6 +111,7 @@ body{
     gap : 2.5rem;
     z-index : 5;
     position : relative;
+    overflow : hidden;
 }
 
 .image_box{
