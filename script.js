@@ -158,3 +158,19 @@ menu_btn.addEventListener("click",()=>{
           num = 0;
       }
 })
+
+//close menu when click any where on screen
+menu_btn.addEventListener("click",(evt)=>{
+       evt.stopPropagation();
+})
+
+nav_bar.addEventListener("click",(evt)=>{
+     evt.stopPropagation();
+})
+
+document.addEventListener("click",(evt)=>{
+         nav_bar.classList.remove("nav_visibale");
+          menu_btn.classList.add("ri-menu-line");
+          menu_btn.classList.remove("ri-close-large-line");
+          num = 0;
+})
