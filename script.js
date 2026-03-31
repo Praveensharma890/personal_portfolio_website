@@ -56,26 +56,26 @@ let index = 0;
 
 function print(){
       if(index<str.length){
-        prof.innerHTML = prof.innerHTML+str[index];
+        prof.textContent = str.substring(0, index + 1);
       index++;
       setTimeout(print,150);
      }else{
-    setTimeout(dlt,300);
+    setTimeout(dlt,800);
      }
-      
 }
-print();
 
 function dlt(){
      if(index>0){
-      prof.innerHTML = str.substring(0,index-1);
+      prof.textContent = str.substring(0,index-1);
       index--;
-      setTimeout(dlt,100);
+      setTimeout(dlt,80);
      }
      else{
-        setTimeout(print,100);
+        setTimeout(print,200);
      }
 }
+
+print();
 
 //cv button
 let cv_btn = document.querySelector(".left_btn");
