@@ -138,3 +138,23 @@ function setActiveNav(){
 }
 
 setActiveNav();
+
+// nav slide on click menu btn
+let menu_btn = document.querySelector(".menu_icon");
+let nav_bar = document.querySelector(".navs");
+let num = 0;
+
+menu_btn.addEventListener("click",()=>{
+      if(num === 0){
+          nav_bar.classList.add("nav_visibale");
+          menu_btn.classList.remove("ri-menu-line");
+          menu_btn.classList.add("ri-close-large-line");
+          num = 1;
+      }
+      else if(num === 1){
+          nav_bar.classList.remove("nav_visibale");
+          menu_btn.classList.add("ri-menu-line");
+          menu_btn.classList.remove("ri-close-large-line");
+          num = 0;
+      }
+})
