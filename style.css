@@ -235,6 +235,7 @@ body{
     left : 38%;
     height : 30%;
     width : 30%;
+    min-width: 400px;
     border : 1px solid var(--border-color);
     background-color : var(--about-bg);
     display : none;
@@ -580,6 +581,15 @@ body{
     .education_carts{
        min-width : 500px;
     }
+    /* notification */
+     .cv-notification{
+        min-width : 300px;
+        left : 28%;
+     }
+    .notification_box{
+        padding: 1rem;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width : 600px){
@@ -613,6 +623,12 @@ body{
     margin-top : 0.6rem;
      } 
 
+     /* notification */
+    .cv-notification {
+        left: 6%;
+        top: 56%;
+    }
+     
      /* education */
      .education{
         height : 120vh;
@@ -686,7 +702,12 @@ body{
     .image_box{
         min-width : 230px;
     }
-
+    
+    /* notification */
+    .cv-notification {
+        min-width: 257px;
+        }
+        
     /* education */
     .education_carts{
         min-width : 250px;
