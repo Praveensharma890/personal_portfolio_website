@@ -631,7 +631,7 @@ body{
      
      /* education */
      .education{
-        height : 120vh;
+        height : 130vh;
      }
      .education_title{
         font-size : 2.1rem;
@@ -692,6 +692,12 @@ body{
     .header{
         height : 9%;
     }
+    .header_title{
+        font-size: 1.3rem;
+    }
+    .navTag {
+        font-size: 1.2rem;
+    }
     .cont_s{
         font-size : 1.2rem;
     }
@@ -702,7 +708,21 @@ body{
     .image_box{
         min-width : 230px;
     }
-    
+     .hello_title{
+        font-size : 1.1rem;
+    }
+    .my_name{
+        font-size : 1.5rem;
+    }
+    .my_prof{
+        font-size : 1.4rem;
+    }
+    .left_btn{
+        font-size : 1rem;
+    }
+    .right_btn a{
+        font-size : 1rem;
+    }
     /* notification */
     .cv-notification {
         min-width: 257px;
@@ -710,17 +730,48 @@ body{
         
     /* education */
     .education_carts{
+        height : 75%;
         min-width : 250px;
+        gap : 1rem;
     }
-
+    .education_title {
+        font-size: 1.6rem;
+    }
+    .cart_title, .board, .percentage {
+    font-size: 1rem;
+    }
     /* skill */
+    .skill_title{
+        font-size : 1.6rem;
+    }
     .skills_carts {
         min-width: 250px;
     }
     .skill_heading {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .skill_dec {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    /* contact */
+    .contact{
+        gap : 1.3rem;
+    }
+    .contact_title{
+        font-size : 1.6rem;
+    }
+    .contact_image{
+        height : 40%;
+        min-width : 230px;
+    }
+    .contact_name {
+        font-size: 1.6rem;
+    }
+    /* footer */
+    .footer_title {
+        font-size: 1.4rem;
+    }
+    .copyright {
+    font-size: 0.9rem;
     }
 }
