@@ -31,5 +31,9 @@ This is my personal portfolio website where I showcase my introduction,education
 1. Clone or download the repository
 2. Open 'index.html' in any web browser
 
+## live demo
+*check out the live version of my portfolio website*
+- [click to view live](https://praveensharma890.github.io/personal_portfolio_website/)
+
 ## Author
 Praveen Sharma
